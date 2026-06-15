@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Guion completo · Heineken México · Ruta Planta Tecate-Otay</title>
+<style>
+  :root { --hk-green:#007a33; --hk-green-dark:#00531f; --hk-red:#e2001a; --hk-grey:#5b6b62; }
+  * { box-sizing:border-box; }
+  body { font-family:"Inter","Segoe UI",system-ui,sans-serif; color:#14241b; margin:0;
+         background:#f3f7f4; line-height:1.65; }
+  header { background:linear-gradient(135deg,var(--hk-green) 0%,var(--hk-green-dark) 100%);
+           color:#fff; padding:2.2rem 1.5rem; }
+  .wrap { max-width:820px; margin:0 auto; padding:0 1.2rem; }
+  header h1 { margin:0 0 .3rem; font-size:1.8rem; border-bottom:4px solid var(--hk-red);
+              display:inline-block; padding-bottom:.25rem; }
+  header p { margin:.2rem 0 0; color:#d8f3e2; }
+  main { padding:2rem 0 4rem; }
+  section { background:#fff; border:1px solid #e1e8e3; border-radius:12px;
+            padding:1rem 1.3rem; margin:0 0 1rem; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+  h2 { color:var(--hk-green-dark); font-size:1.1rem; margin:.2rem 0 .5rem; }
+  .n { color:var(--hk-red); font-weight:800; margin-right:.4rem; }
+  p { margin:0; font-size:1.02rem; }
+  .back { display:inline-block; margin-top:.6rem; color:#fff; text-decoration:underline; }
+  footer { text-align:center; color:var(--hk-grey); font-size:.85rem; padding:1.5rem; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Guion completo de la narración</h1>
+  <p>Heineken México · Ruta Planta Tecate-Otay · Fase 3 · Equipo 4</p>
+  <a class="back" href="./">← Volver a la presentación</a>
+</div></header>
+<main><div class="wrap">
+  <section>
+    <h2><span class="n">01</span> Portada</h2>
+    <p>Hola, somos el Equipo cuatro de Inteligencia de Negocios. En este video presentamos la Fase tres de nuestro proyecto para Heineken México: el análisis predictivo, prescriptivo y las recomendaciones para mejorar su ruta de exportación, de la Planta Tecate a Otay, California.</p>
+  </section>
+  <section>
+    <h2><span class="n">02</span> El problema</h2>
+    <p>El problema que analizamos son los retrasos e incumplimiento del plan de entrega en esta ruta. Es una operación crítica que trabaja en flujo continuo, sin almacén intermedio, por lo que cualquier desviación afecta toda la cadena logística. Detectamos baja confiabilidad y falta de control sobre la priorización de las órdenes.</p>
+  </section>
+  <section>
+    <h2><span class="n">03</span> Las cifras del problema</h2>
+    <p>Las cifras lo confirman. Analizamos trescientas noventa y una órdenes embarcadas entre abril y mayo de dos mil veintiséis. El sesenta y nueve por ciento se entregó con retraso, con un tiempo promedio cercano a seis días. Además, doscientas veintitrés órdenes salieron fuera de la secuencia FIFO, y los dos transportistas mostraron un desempeño muy desigual.</p>
+  </section>
+  <section>
+    <h2><span class="n">04</span> Tipo de datos</h2>
+    <p>Los datos provienen de una extracción del sistema SAP, donde cada registro representa una orden de embarque. Incluyen el estatus de entrega, el tiempo de entrega y de planta, el backlog previo, el cumplimiento de FIFO y las fechas de cada orden. Son trescientos noventa y un registros de periodicidad diaria, a los que aplicamos un proceso de limpieza para garantizar su confiabilidad.</p>
+  </section>
+  <section>
+    <h2><span class="n">05</span> Técnica de análisis y justificación</h2>
+    <p>Aplicamos tres tipos de análisis. El descriptivo, con un tablero de indicadores, un análisis FODA y un diagrama de Ishikawa para hallar la causa raíz. El predictivo, mediante un promedio móvil ponderado de siete días; lo elegimos porque suaviza la variación diaria, se alinea con la planeación semanal de los coordinadores y pondera cada periodo por su volumen de órdenes. Y el prescriptivo, que traduce los pronósticos en acciones concretas.</p>
+  </section>
+  <section>
+    <h2><span class="n">06</span> Resultados — descriptivo</h2>
+    <p>En el análisis descriptivo, el tablero muestra que de las trescientas noventa y una órdenes, doscientas setenta se entregaron tarde, setenta a tiempo y cincuenta y una quedaron pendientes. La comparación entre proveedores es reveladora: Transportes Dos Caminos promedia cuatro días de entrega, mientras que Transportes Viento llega a nueve. Esto confirma una clara oportunidad de control por proveedor.</p>
+  </section>
+  <section>
+    <h2><span class="n">07</span> Resultados — predictivo</h2>
+    <p>El pronóstico para la semana del dieciséis al veintidós de mayo enciende las alertas. El porcentaje de atraso se proyecta en casi noventa por ciento, muy por encima de la meta y con tendencia al alza. El tiempo de entrega se estima en cuatro punto nueve días y el backlog en tres punto cuatro órdenes. En conjunto, la ruta enfrenta tres riesgos: de confiabilidad, de eficiencia y de control operativo.</p>
+  </section>
+  <section>
+    <h2><span class="n">08</span> Análisis prescriptivo — simulación FIFO</h2>
+    <p>En el análisis prescriptivo simulamos la operación bajo una disciplina FIFO estricta, respetando la capacidad de los transportistas y del muelle compartido, sobre trescientas cuarenta órdenes. El resultado es contundente: el cumplimiento de la secuencia subiría del treinta y cuatro al sesenta y seis por ciento, y la espera promedio bajaría de seis punto uno a dos punto dos días. Transportes Viento, el proveedor más lento, pasaría de nueve punto cuatro a dos punto cuatro días, casi igualando al mejor. El límite que queda es el muelle compartido, no la disciplina de secuencia.</p>
+  </section>
+  <section>
+    <h2><span class="n">09</span> Hallazgos clave</h2>
+    <p>El hallazgo principal es que la problemática es sistémica: no responde a una sola causa, sino al incumplimiento de FIFO, la falta de visibilidad en tiempo real y la variabilidad entre proveedores. Incluso encontramos casos atípicos, como tres órdenes con setenta días de entrega, retenidas por calidad. Hoy la gestión es reactiva: se atienden los retrasos después de que ocurren.</p>
+  </section>
+  <section>
+    <h2><span class="n">10</span> Recomendaciones</h2>
+    <p>Por eso, recomendamos a la empresa cinco acciones. Primero, una gestión FIFO disciplinada que priorice las órdenes más antiguas. Segundo, usar el tablero de forma diaria para monitorear el backlog en tiempo real. Tercero, establecer un control por proveedor. Cuarto, ejecutar un plan de depuración del backlog acumulado. Y quinto, evolucionar de una gestión reactiva a una preventiva.</p>
+  </section>
+  <section>
+    <h2><span class="n">11</span> Escenario con mejora</h2>
+    <p>Con estas acciones, el escenario mejora de forma relevante. El porcentaje de atraso bajaría de casi noventa a setenta y dos por ciento, el tiempo de entrega alcanzaría la meta de cuatro días, el backlog se reduciría a dos punto cuatro órdenes y los incumplimientos de FIFO pasarían de doscientos veintitrés a ciento cincuenta y seis. La operación pasaría de un estado crítico a uno en estabilización.</p>
+  </section>
+  <section>
+    <h2><span class="n">12</span> Cierre</h2>
+    <p>En resumen, los datos revelan una ruta con retrasos sistémicos, pero también un camino claro de mejora a través del control FIFO, la visibilidad diaria y el seguimiento por proveedor. Gracias por su atención, de parte del Equipo cuatro.</p>
+  </section>
+</div></main>
+<footer>Inteligencia de Negocios (AD5110) · Grupo 4 · 15 jun 2026</footer>
+</body>
+</html>
