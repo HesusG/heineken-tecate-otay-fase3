@@ -1,0 +1,76 @@
+/* Heineken corporate theme — auto-loaded by Slidev from project root */
+:root {
+  --hk-green: #007a33;
+  --hk-green-dark: #00531f;
+  --hk-red: #e2001a;
+  --hk-ink: #14241b;
+  --hk-grey: #5b6b62;
+}
+
+.slidev-layout {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  color: var(--hk-ink);
+  padding: 2.2rem 3rem;
+}
+
+.slidev-layout h1 {
+  color: var(--hk-green);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  border-bottom: 4px solid var(--hk-red);
+  padding-bottom: 0.3rem;
+  display: inline-block;
+  margin-bottom: 1.1rem;
+}
+.slidev-layout h2 { color: var(--hk-green-dark); font-weight: 700; }
+
+.slidev-layout strong, .slidev-layout b { color: var(--hk-red); font-weight: 800; }
+
+.slidev-layout ul { line-height: 1.7; }
+.slidev-layout li { margin-bottom: 0.35rem; }
+.slidev-layout li::marker { color: var(--hk-green); }
+
+/* Cover */
+.hk-cover {
+  background: linear-gradient(135deg, var(--hk-green) 0%, var(--hk-green-dark) 100%);
+  color: #fff;
+}
+.hk-cover h1 { color: #fff; border-bottom-color: var(--hk-red); }
+.hk-cover .sub { color: #d8f3e2; }
+.hk-star { color: var(--hk-red); }
+
+/* Integrantes en la portada */
+.team {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem 2.5rem;
+  margin-top: 1.4rem; font-size: 1.1rem;
+}
+.team div { color: #fff; }
+.team span { color: #bfe9cf; font-size: 0.8rem; margin-left: 0.45rem; }
+
+/* Texto ampliado en diapositivas con holgura */
+.lg, .lg p { font-size: 1.3rem; line-height: 1.75; }
+.lg li { font-size: 1.3rem; }
+.lg2 ol { font-size: 1.35rem; line-height: 1.9; }
+
+/* KPI cards — limpias, sin barra lateral, número centrado */
+.kpi-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+.kpi {
+  background: #f3f7f4; border: 1px solid #e1e8e3;
+  border-radius: 12px; padding: 1rem 1.1rem; min-width: 9.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.kpi .v { font-size: 2.1rem; font-weight: 800; color: var(--hk-green); line-height: 1; }
+.kpi .v.bad { color: var(--hk-red); }
+.kpi .l { font-size: 0.85rem; color: var(--hk-grey); margin-top: 0.4rem; }
+
+/* Before/after table */
+.cmp { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.cmp th, .cmp td { border: 1px solid #d7e2db; padding: 0.45rem 0.7rem; text-align: center; }
+.cmp th { background: var(--hk-green); color: #fff; }
+.cmp td:first-child { text-align: left; font-weight: 600; }
+.cmp .good { color: var(--hk-green); font-weight: 800; }
+.cmp .bad { color: var(--hk-red); font-weight: 800; }
+
+.foot { position: absolute; bottom: 0.8rem; right: 1.2rem; font-size: 0.7rem; color: var(--hk-grey); }
+img.fig { border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.12); }

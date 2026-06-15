@@ -1,0 +1,12 @@
+# Slidev / node
+slides/node_modules/
+slides/dist/
+slides/.slidev/
+
+# Build artifacts
+build/
+output/*.mp4
+
+# OS
+.DS_Store
+slides/node_modules
