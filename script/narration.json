@@ -37,7 +37,7 @@
   {
     "idx": 8,
     "slide": "Análisis prescriptivo — simulación FIFO",
-    "text": "En el análisis prescriptivo simulamos la operación bajo una disciplina FIFO estricta, respetando la capacidad de los transportistas y del muelle compartido, sobre trescientas cuarenta órdenes. El resultado es contundente: el cumplimiento de la secuencia subiría del treinta y cuatro al sesenta y seis por ciento, y la espera promedio bajaría de seis punto uno a dos punto dos días. Transportes Viento, el proveedor más lento, pasaría de nueve punto cuatro a dos punto cuatro días, casi igualando al mejor. El límite que queda es el muelle compartido, no la disciplina de secuencia."
+    "text": "En el análisis prescriptivo aplicamos una simulación de escenarios sobre la secuencia FIFO, comparando la operación real contra un escenario con disciplina FIFO estricta, en trescientas cuarenta órdenes. El resultado es contundente: el cumplimiento de la secuencia subiría del treinta y cuatro al sesenta y seis por ciento, y la espera promedio bajaría de seis punto uno a dos punto dos días. Transportes Viento, el proveedor más lento, pasaría de nueve punto cuatro a dos punto cuatro días, casi igualando al mejor proveedor."
   },
   {
     "idx": 9,

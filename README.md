@@ -1,10 +1,24 @@
-# st-video — Video narrado Heineken / Ruta Tecate–Otay (Paso 6)
+# Heineken México · Ruta Planta Tecate-Otay — Inteligencia de Negocios (Fase 3, Equipo 4)
 
-Genera un video MP4 (≤5 min) con voz clonada en **español de México** y diapositivas
-estilo **Heineken**, para la Fase 3 de Inteligencia de Negocios (Equipo 4).
+Presentación **Slidev** estilo **Heineken** + video MP4 narrado con voz clonada en
+**español de México**, para el Paso 6 de la Fase 3.
 
-**Entregable:** `output/equipo4_heineken_tecate_otay.mp4` — H.264 + AAC, 1920×1080, ~4:21.
+## 🌐 Publicado
+- **Presentación (Slidev):** https://hesusg.github.io/heineken-tecate-otay-fase3/
+- **Guion completo (página aparte):** https://hesusg.github.io/heineken-tecate-otay-fase3/guion.html
+
+**Video:** `output/equipo4_heineken_tecate_otay.mp4` — H.264 + AAC, 1920×1080.
 Reproduce en cualquier dispositivo (VLC, navegador, PowerPoint, móvil).
+
+## Publicar de nuevo (GitHub Pages)
+```bash
+cd slides && node node_modules/@slidev/cli/bin/slidev.mjs build slides.md \
+  --base /heineken-tecate-otay-fase3/ --out dist
+cd dist && touch .nojekyll && git init -b gh-pages && git add -A \
+  && git commit -m "Deploy" \
+  && git push -f https://github.com/HesusG/heineken-tecate-otay-fase3.git gh-pages
+```
+La página del guion se genera desde `script/narration.json` hacia `slides/public/guion.html`.
 
 ## Estructura
 ```

@@ -26,8 +26,8 @@ En el análisis descriptivo, el tablero muestra que de las trescientas noventa y
 **7 · Resultados — análisis predictivo.**
 El pronóstico para la semana del dieciséis al veintidós de mayo enciende las alertas. El porcentaje de atraso se proyecta en casi noventa por ciento, muy por encima de la meta y con tendencia al alza. El tiempo de entrega se estima en cuatro punto nueve días y el backlog en tres punto cuatro órdenes. En conjunto, la ruta enfrenta tres riesgos: de confiabilidad, de eficiencia y de control operativo.
 
-**8 · Análisis prescriptivo — simulación FIFO.**
-En el análisis prescriptivo simulamos la operación bajo una disciplina FIFO estricta, respetando la capacidad de los transportistas y del muelle compartido, sobre trescientas cuarenta órdenes. El resultado es contundente: el cumplimiento de la secuencia subiría del treinta y cuatro al sesenta y seis por ciento, y la espera promedio bajaría de seis punto uno a dos punto dos días. Transportes Viento, el proveedor más lento, pasaría de nueve punto cuatro a dos punto cuatro días, casi igualando al mejor. El límite que queda es el muelle compartido, no la disciplina de secuencia.
+**8 · Análisis prescriptivo — simulación de escenarios FIFO.**
+En el análisis prescriptivo aplicamos una simulación de escenarios sobre la secuencia FIFO, comparando la operación real contra un escenario con disciplina FIFO estricta, en trescientas cuarenta órdenes. El resultado es contundente: el cumplimiento de la secuencia subiría del treinta y cuatro al sesenta y seis por ciento, y la espera promedio bajaría de seis punto uno a dos punto dos días. Transportes Viento, el proveedor más lento, pasaría de nueve punto cuatro a dos punto cuatro días, casi igualando al mejor proveedor.
 
 **9 · Hallazgos clave.**
 El hallazgo principal es que la problemática es sistémica: no responde a una sola causa, sino al incumplimiento de FIFO, la falta de visibilidad en tiempo real y la variabilidad entre proveedores. Incluso encontramos casos atípicos, como tres órdenes con setenta días de entrega, retenidas por calidad. Hoy la gestión es reactiva: se atienden los retrasos después de que ocurren.
